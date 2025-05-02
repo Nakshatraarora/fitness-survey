@@ -322,7 +322,7 @@ def encode_variables_for_correlation(df: pd.DataFrame) -> pd.DataFrame:
         research_claims_col: research_claims_map,
         buy_products_col: buy_products_map,
         negative_effects_col: negative_effects_map,
-        realistic_habits_col: realistic_habits_map,  # Fixed: Use column name as key
+        realistic_habits_col: realistic_habits_map,  
         qualified_col: qualified_map,
         unhealthy_trends_col: unhealthy_trends_map,
         stop_following_col: stop_following_map,
@@ -632,7 +632,7 @@ def main():
     st.title("🏋🏽🔥💪🏼🎧 Fitness Influencer Survey Dashboard")
     st.sidebar.header("Configuration")
 
-    data_path = st.sidebar.text_input("excel file path", value="C:\\Project\\Data Analysis\\anuj (Responses).xlsx")
+    data_path = st.sidebar.text_input("excel file path", value="anuj (Responses).xlsx")
     if not data_path:
         st.error("Please provide a valid file path.")
         return
